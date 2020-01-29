@@ -4,6 +4,8 @@ import Home from '@/views/Home.vue'
 import Users from '@/views/Users.vue'
 import Granfront from '@/views/Granfront.vue'
 import Yodobashi from '@/views/Yodobashi.vue'
+import Station from '@/views/Station.vue'
+
 
 
 // routerを使う宣言
@@ -26,6 +28,10 @@ export default new Router({
     {
       path: '/Yodobashi',
       component: Yodobashi,
+    },
+    {
+      path: '/Station',
+      component: Station,
     },
   ]
 })
