@@ -1,25 +1,7 @@
 <template>
   <div style="width: 700px; margin: auto; padding-top:50px;">
-
-    <a :href="twitter"><i class="fab fa-twitter"></i></a>
-
-    <button @click="isActive=!isActive">おせ！</button>
-    <div class="toggle" :class="{active:isActive}">
-      <ul>
-        <li>
-          <a :href="twitter"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a :href="facebook"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a :href="instagram"><i class="fab fa-twitter"></i></a>
-        </li>
-      </ul>
-    </div>
-
-
-    <router-link to="/" class="link" id="home">Home</router-link>
+    <router-link to="/" class="link" id="home"><h1>Home</h1></router-link>
+    <router-link to="/station" class="link" id='station'>Station</router-link>
     <router-link to='/users' class="link" id="users">Users</router-link>
     <router-link to='/granfront' class="link" id="granfront">Granfront</router-link>
     <router-link to="/yodobashi" class="link" id ="yodobashi">Yodobashi</router-link>
@@ -27,29 +9,12 @@
   </div>
 </template>
 
-<script>
-export default {
-  data(){
-    return {
-      twitter: 'https://twitter.com/UBER10191097',
-      facebook: 'https://www.facebook.com/yamazoe.kensaku',
-      instagram: 'https://www.instagram.com/yamazoe88/',
-      isActive: false,
-    }
-  },
-  methods:{
-    window:onload = function(){
-      alert('こんにちは');
-    }
-  }
-}
-</script>
 
 <style>
 *{
   color: white;
 }
-#home{
+#station{
   position: absolute;
   bottom: 0;
   left: 50px;
@@ -58,7 +23,7 @@ export default {
   background-color: darkcyan;
   transition: .5s;
 }
-#home:hover{
+#station:hover{
   height: 400px;
 }
 #users{
